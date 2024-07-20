@@ -13,8 +13,12 @@ class MovieCard extends StatelessWidget {
       color: Theme.of(context).colorScheme.surface,
       child: InkWell(
         onTap: () {
-          // Navigate to movie details page
-        },
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MovieDetailPage(movie: movie),
+            ),
+          );        },
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

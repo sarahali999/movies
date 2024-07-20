@@ -252,7 +252,8 @@ class _RatingsPageState extends State<RatingsPage> {
             SliverAppBar(
               floating: true,
               pinned: true,
-              expandedHeight: 120.0,
+              expandedHeight: 40.0,
+
               flexibleSpace: FlexibleSpaceBar(
                 title: Text('Top 10 Rated Movies'),
                 background: Container(
